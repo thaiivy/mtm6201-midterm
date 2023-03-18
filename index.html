@@ -16,18 +16,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <!-- Connects Kanit from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500&display=swap" rel="stylesheet">
+
+    <!-- Connects FontAwesome 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div>
+            <div class="header-grid">
+                <div class="logo-container">
+                    <img src="images/angieslogo.png" alt="logo of steaming purple bread" class="logo">
                 </div>
-                    <img src="images/angiesbreadlogo.png" alt="logo of steaming purple bread" class="logo">
-                    <h1>Angie's</h1>
-                    <h2>Bread n' Bakery</h2>
-                </div>
-                <div>
+                <div class="nav-grid">
                     <ul>
                         <li>
                             <a href="#" class="nav-item" id="home">Home</a>
@@ -44,14 +45,50 @@
         </nav>
     </header>
     <main>
-        <div class="banner">
-            <div>
+        <div class="banner-background">
+            <div class="banner-layer">
+                <!-- <img src="images/sergio-arze-5msGxboneMA-unsplash.jpg" alt="photo of croissants" id="bannerimg"> -->
                 <h3>A Flavour For Every Mood</h3>
                 <h4>Every little cake pop and loaf is named after a different mood! Find the right one for yours.</h4>
             </div>
         </div>
-        <div>
-            
+        <div class="sections">
+            <div class="cakes">
+                <img src="images/karly-gomez-rotFzR9lX0E-unsplash.jpg" alt="picture of cake" class="shop-section">
+                <h5 class="section-heading">Cakes</h5>
+                <button class="section-button">Shop <i class="fa fa-angle-right"></i></button>
+            </div>
+            <div class="sweets">
+                <img src="images/kobby-mendez-q54Oxq44MZs-unsplash.jpg" alt="picture of donuts" class="shop-section">
+                <h5 class="section-heading">Sweets</h5>
+                <button class="section-button">Shop  <i class="fa fa-angle-right"></i></button>
+            </div>
+            <div class="loaves">
+                <img src="images/vicky-ng-JlwXPO7DStM-unsplash.jpg" alt="picture of two slices of bread on a board" class="shop-section">
+                <h5 class="section-heading">Loaves</h5>
+                <button class="section-button">Shop <i class="fa fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item-1">
+                <h5>Storefront</h5>
+                <p>Drop by for a snack! Our store offers a wide range of flavours and alternatives. Or, call in!</p>
+                <button type="button" class="services-button">Find us <i class="fa fa-angle-right"></i></button>
+            </div>
+
+            <div class="storefront-img" class="grid-item-2">
+                <img src="images/storefront-resized.jpg" alt="Photo of a bakery storefront">
+            </div>
+
+            <div class="catering-img" class="grid-item-3">
+                <img src="images/nadya-spetnitskaya-tOYiQxF9-Ys-unsplash (1).jpg" alt="Photo of dough being massaged">
+            </div>
+
+            <div class="grid-item-4">
+                <h5>Catering</h5>
+                <p>We offer catering to parties and events. Please call in advance and we will discuss the perfect plan for you!</p>
+                <button type="button" class="services-button">Details <i class="fa fa-angle-right"></i></button>
+            </div>
         </div>
     </main>
 </body>
