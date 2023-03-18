@@ -190,3 +190,12 @@ ul {
     grid-template-rows: auto auto;
     grid-template-areas: storefront storefronttext;
 }
+
+.about-h4 {
+    color: #994395;
+    font-size: 2em;
+}
+
+.about-wrapper {
+    text-align: center;
+}
