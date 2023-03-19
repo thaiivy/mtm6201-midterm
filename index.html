@@ -20,105 +20,146 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="header-grid">
-                <!-- Site logo -->
-                <div class="logo-container">
-                    <img src="images/angieslogo.png" alt="logo of steaming purple bread" class="logo">
-                </div>
-                <div class="nav-grid">
-                    <!-- Navbar anchored to other pages and linked with html files -->
-                    <ul>
-                        <li>
-                            <a href="index.html" class="nav-item" id="home">Home</a>
-                        </li>
-                        <li>
-                            <a href="html/about.html" class="nav-item" id="about">About Us</a>
-                        </li>
-                        <li>
-                            <a href="html/contact.html" class="nav-item" id="contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Main banner for homepage -->
-        <div class="banner-background">
-            <div class="banner-layer">
-                <h3 id="banner-heading">A Flavour For Every Mood</h3>
-                <h4 id="banner-text">Every little cake pop and loaf is named after a different mood! Find the right one for yours.</h4>
-            </div>
-        </div>
-        <!-- Displays different product categories -->
-        <div class="sections">
-            <div class="products-padding">
-                <div class="product-images">
-                    <div class="cakes-product-img">
-                        <img src="images/cake-300x300.jpg" alt="picture of cake" class="shop-section">
+    <div class="container" id="top">
+        <ul class="skiplinks">
+            <li id="skipnav"><a href="#nav">Skip to main nav</a></li>
+            <li id="skipmain"><a href="#main">Skip to main content</a></li>
+        </ul>
+        <header>
+            <nav id="nav" role="navigation">
+                <div class="header-grid">
+                    <!-- Site logo -->
+                    <div class="logo-container">
+                        <picture>
+                            <source srcset="" media="(min-width: 1200px)">
+                            <source srcset="" media="(min-width: 800px)">
+                            <img src="images/angieslogo.png" alt="logo of steaming purple bread" class="logo">
+                        </picture>
                     </div>
-                    <div class="sweets-product-img">
-                        <img src="images/donuts-300x300.jpg" alt="picture of donuts" class="shop-section">
-                    </div>
-                    <div class="loaves-product-img">
-                        <img src="images/loaves-300x300.jpg" alt="picture of two slices of bread on a board" class="shop-section">
+                    <div class="nav-grid">
+                        <!-- Navbar anchored to other pages and linked with html files -->
+                        <ul>
+                            <li>
+                                <a href="index.html" class="nav-item" id="home">Home</a>
+                            </li>
+                            <li>
+                                <a href="html/about.html" class="nav-item" id="about">About Us</a>
+                            </li>
+                            <li>
+                                <a href="html/contact.html" class="nav-item" id="contact">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="product-headings">
-                    <div class="cakes-product-heading">
-                        <h5 class="section-heading">Cakes</h5>
-                    </div>
-                    <div class="sweets-product-heading">
-                        <h5 class="section-heading">Sweets</h5>
-                    </div>
-                    <div class="loaves-product-heading">
-                        <h5 class="section-heading">Loaves</h5>
-                    </div>
-                </div>
-
-                <div class="product-buttons">
-                    <div class="cakes-product-button">
-                        <a href="#" class="section-button">Shop <i class="fa fa-angle-right product-arrow"></i></a>
-                    </div>
-                    <div class="sweets-product-button">
-                        <a href="#" class="section-button">Shop <i class="fa fa-angle-right product-arrow"></i></a>
-                    </div>
-                    <div class="loaves-product-button">
-                        <a href="#" class="section-button">Shop <i class="fa fa-angle-right product-arrow"></i></a>
-                    </div>
+            </nav>
+        </header>
+        <main id="main" role="main">
+            <!-- Main banner for homepage -->
+            <div class="banner-background" role="banner">
+                <div class="banner-layer">
+                    <h3 id="banner-heading">A Flavour For Every Mood</h3>
+                    <h4 id="banner-text">Every little cake pop and loaf is named after a different mood! Find the right one for yours.</h4>
                 </div>
             </div>
-        </div>
+            <!-- Displays different product categories -->
+            <div class="sections">
+                <div class="products-padding">
+                    <div class="product-images">
+                        <div class="cakes-product-img">
+                        <section>
+                            <img srcset="images/cake-150x150.jpg 1x,
+                                        images/cake-300x300.jpg 2x,
+                                        images/cake-450x450.jpg 3x"
+                                src="images/cake-300x300.jpg"
+                                alt="picture of cake"
+                                class="shop-section cake-image">
+                        </section>
+                        </div>
+                        <div class="sweets-product-img">
+                            <section>
+                                <img srcset="images/donuts-150x150.jpg 1x,
+                                        images/donuts-300x300.jpg 2x,
+                                        images/donuts-450x450.jpg 3x"
+                                src="images/donuts-300x300.jpg"
+                                alt="picture of donuts"
+                                class="shop-section">
+                            </section>
+                        </div>
+                        <div class="loaves-product-img">
+                            <section>
+                                <img srcset="images/loaves-150x150.jpg 1x,
+                                        images/loaves-300x300.jpg 2x,
+                                        images/loaves-450x450.jpg 3x"
+                                src="images/loaves-300x300.jpg" alt="picture of two slices of bread on a board" class="shop-section">
+                            </section>
+                        </div>
+                    </div>
 
-        <!-- Displays different business services -->
-        <div class="grid-container">
-            <div class="services-flex-1">
-                <div id="grid-item-1">
-                    <h5 class="grid-heading" id="storefront">Storefront</h5>
-                    <p class="flex-text">Drop by for a snack! Our store offers a wide range of flavours and alternatives. Or, call in!</p>
-                    <a href="#" class="services-button">Find us <i class="fa fa-angle-right"></i></a>
-                </div>
-                <hr>
-                <div class="storefront-img" id="flex-item-2">
-                    <img src="images/storefront.jpg" alt="Photo of a bakery storefront" class="storefront">
+                    <div class="product-headings">
+                        <div class="cakes-product-heading">
+                            <h5 class="section-heading">Cakes</h5>
+                        </div>
+                        <div class="sweets-product-heading">
+                            <h5 class="section-heading">Sweets</h5>
+                        </div>
+                        <div class="loaves-product-heading">
+                            <h5 class="section-heading">Loaves</h5>
+                        </div>
+                    </div>
+
+                    <div class="product-buttons">
+                        <div class="cakes-product-button">
+                            <a href="#" class="section-button">Shop <i class="fa fa-angle-right product-arrow"></i></a>
+                        </div>
+                        <div class="sweets-product-button">
+                            <a href="#" class="section-button">Shop <i class="fa fa-angle-right product-arrow"></i></a>
+                        </div>
+                        <div class="loaves-product-button">
+                            <a href="#" class="section-button">Shop <i class="fa fa-angle-right product-arrow"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="services-flex-2">
-                <div class="catering-img" id="flex-item-3">
-                    <img src="images/catering.jpg" alt="Photo of dough being massaged">
-                </div>
 
-                <div id="flex-item-4">
+            <!-- Displays different business services -->
+            <div class="grid-container">
+                <div class="services-flex-1">
+                    <div id="grid-item-1">
+                        <h5 class="grid-heading" id="storefront">Storefront</h5>
+                        <p itemscope itemtype="https://schema.org/Store" class="flex-text">Drop by for a snack! Our store offers a wide range of flavours and alternatives. Or, call in!</p>
+                        <a href="#" class="services-button">Find us <i class="fa fa-angle-right"></i></a>
+                    </div>
                     <hr>
-                    <h5 class="flex-heading" id="catering">Catering</h5>
-                    <p class="flex-text">We offer catering to parties and events. Please call in advance and we will discuss the perfect plan for you!</p>
-                    <a href="#" class="services-button">Details <i class="fa fa-angle-right"></i></a>
+                    <div class="storefront-img" id="flex-item-2">
+                        <section>
+                            <img srcset="images/storefront-400x266.jpg 1x,
+                                        images/storefront.jpg 2x,
+                                        images/storefront-800x533.jpg 3x"
+                                src="images/storefront.jpg" alt="Photo of a bakery storefront" class="storefront">
+                        </section>
+                    </div>
+                </div>
+                <div class="services-flex-2">
+                    <div class="catering-img" id="flex-item-3">
+                        <picture>
+                            <img srcset="images/catering-400x266.jpg 1x,
+                                        images/catering.jpg 2x,
+                                        images/catering-800x533.jpg 3x"
+                                src="images/catering.jpg" 
+                                alt="Photo of dough being massaged">
+                        </picture>
+                    </div>
+
+                    <div id="flex-item-4">
+                        <hr>
+                        <h5 class="flex-heading" id="catering">Catering</h5>
+                        <p itemscope itemtype="https://schema.org/FoodService" class="flex-text">We offer catering to parties and events. Please call in advance and we will discuss the perfect plan for you!</p>
+                        <a href="#" class="services-button">Details <i class="fa fa-angle-right"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
+    <footer>&copy; Copyright 2023 Angie's <a href="#top">Back to Top</a></footer>
 </body>
 </html>

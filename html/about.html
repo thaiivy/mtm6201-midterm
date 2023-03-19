@@ -19,8 +19,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header id="top">
+        <ul class="skiplinks">
+            <li id="skipnav"><a href="#nav">Skip to main nav</a></li>
+            <li id="skipmain"><a href="#main">Skip to main content</a></li>
+        </ul>
+        <nav id="nav" role="navigation">
             <!-- Adds navbar idential to other pages but linked back out of html file-->
             <div class="header-grid">
                 <div class="logo-container">
@@ -42,12 +46,12 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main id="main" role="main">
         <!-- Main banner for About Us page -->
-        <div class="aboutbanner-background">
+        <div class="aboutbanner-background" role="banner">
             <div class="banner-layer">
                 <h3 id="banner-heading">About Us</h3>
-                <h4 id="banner-text">Get to know our business!</h4>
+                <h4 id="banner-text"itemscope itemtype=https://schema.org/LocalBusiness>Get to know our business!</h4>
             </div>
         </div>
         <div class="about-wrapper">
@@ -55,12 +59,12 @@
                 <!-- Embeds YouTube video -->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/pg_55jPfryg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h5 id="who">Who are we?</h5>
-                <p class="whotext">We are a small team of bakers and enthusiasts who want to spread some love and joy through our sweet tooth.<br><i class="fa fa-birthday-cake"></i></p>
+                <p class="whotext" itemscope itemtype=https://schema.org/Bakery>We are a small team of bakers and enthusiasts who want to spread some love and joy through our sweet tooth.<br><i class="fa fa-birthday-cake"></i></p>
             </div>
             <!-- Oragnizes content for flex layout -->
             <div class="msflex">
                 <div class="mission-background">
-                    <div class="about-layer" id="mission">
+                    <div class="about-layer" id="mission" itemscope itemtype="https://schema.org/Person">
                         <h4 class="about-h4" >Our Mission</h4>
                         <p class="ms-text">Through fair pricepoints and a huge variety, we want to be able to give everyone exactly what they are craving for.</p>
                     </div>
@@ -75,11 +79,16 @@
             <!-- Breaks up page with minimal text -->
             <div>
                 <p class="whotext" id="employ"><i class="fa fa-heart"></i><br>We employ culinary students and those with a love for the craft and community.</p>
-                <p class="whotext" id="ivythai">However, we were founded and currently owned by Ivy Thai.<p>
+                <p itemscope itemtype="https://schema.org/Person" class="whotext" id="ivythai">However, we were founded and currently owned by Ivy Thai.<p>
             </div>
             <!-- Adds business owner photo and a short history -->
             <div class="ivy-bio">
-                <img src="../images/ivy-thai-photo.jpg" alt="photo of Ivy Thai" id="ivyphoto">
+                <section>
+                    <img srcset="../images/ivy-thai-photo-400x266.jpg 1x,
+                                ../images/ivy-thai-photo.jpg 2x,
+                                ../images/ivy-thai-photo-800x533.jpg 3x"
+                            src="../images/ivy-thai-photo.jpg" alt="photo of Ivy Thai" id="ivyphoto">
+                </section>
                 <div>
                     <h4 class="about-h4">Hi!</h4>
                     <p class="ivy-text">I started this business because baking was a huge hobby of mine. I saw the potential in a shop like this and decided to take the chance. I regret nothing.<p>
@@ -87,5 +96,6 @@
             </div>
         </div>
     </main>
+    <footer>&copy; Copyright 2023 Angie's <a href="#top">Back to Top</a></footer>
 </body>
 </html>
