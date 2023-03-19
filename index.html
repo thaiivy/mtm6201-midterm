@@ -11,24 +11,24 @@
     <!-- Connects CSS stylesheet -->
     <link rel="stylesheet" href="css/main.css">
  
-    <!-- Connects Lobster from Google Fonts -->
+    <!-- Connects Kanit from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <!-- Connects Kanit from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500&display=swap" rel="stylesheet">
 
-    <!-- Connects FontAwesome 4.7.0 -->
+    <!-- Connects FontAwesome 4.7.0 Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="header-grid">
+                <!-- Site logo -->
                 <div class="logo-container">
                     <img src="images/angieslogo.png" alt="logo of steaming purple bread" class="logo">
                 </div>
                 <div class="nav-grid">
+                    <!-- Navbar anchored to other pages and linked with html files -->
                     <ul>
                         <li>
                             <a href="index.html" class="nav-item" id="home">Home</a>
@@ -45,12 +45,14 @@
         </nav>
     </header>
     <main>
+        <!-- Main banner for homepage -->
         <div class="banner-background">
             <div class="banner-layer">
                 <h3 id="banner-heading">A Flavour For Every Mood</h3>
                 <h4 id="banner-text">Every little cake pop and loaf is named after a different mood! Find the right one for yours.</h4>
             </div>
         </div>
+        <!-- Displays different product categories -->
         <div class="sections">
             <div class="products-padding">
                 <div class="product-images">
@@ -79,53 +81,40 @@
 
                 <div class="product-buttons">
                     <div class="cakes-product-button">
-                        <a href="#" class="section-button">Shop <i class="fa fa-angle-right"></i></a>
+                        <a href="#" class="section-button">Shop <i class="fa fa-angle-right product-arrow"></i></a>
                     </div>
                     <div class="sweets-product-button">
-                        <a href="#" class="section-button">Shop <i class="fa fa-angle-right"></i></a>
+                        <a href="#" class="section-button">Shop <i class="fa fa-angle-right product-arrow"></i></a>
                     </div>
                     <div class="loaves-product-button">
-                        <a href="#" class="section-button">Shop <i class="fa fa-angle-right"></i></a>
+                        <a href="#" class="section-button">Shop <i class="fa fa-angle-right product-arrow"></i></a>
                     </div>
                 </div>
             </div>
-            <!-- <div class="cakes">
-                <img src="images/karly-gomez-rotFzR9lX0E-unsplash.jpg" alt="picture of cake" class="shop-section">
-    
-                <h5 class="section-heading">Cakes</h5>
-                <a href="#" class="section-button">Shop <i class="fa fa-angle-right"></i></a>
-            </div>
-            <div class="sweets">
-                <img src="images/kobby-mendez-q54Oxq44MZs-unsplash.jpg" alt="picture of donuts" class="shop-section">
-                <h5 class="section-heading">Sweets</h5>
-                <a href="#" class="section-button">Shop <i class="fa fa-angle-right"></i></a>
-            </div>
-            <div class="loaves">
-                <img src="images/vicky-ng-JlwXPO7DStM-unsplash.jpg" alt="picture of two slices of bread on a board" class="shop-section">
-                <h5 class="section-heading">Loaves</h5>
-                <a href="#" class="section-button">Shop <i class="fa fa-angle-right"></i></a>
-            </div> -->
         </div>
+
+        <!-- Displays different business services -->
         <div class="grid-container">
             <div class="services-flex-1">
                 <div id="grid-item-1">
-                    <h5 class="grid-heading">Storefront</h5>
-                    <p>Drop by for a snack! Our store offers a wide range of flavours and alternatives. Or, call in!</p>
+                    <h5 class="grid-heading" id="storefront">Storefront</h5>
+                    <p class="flex-text">Drop by for a snack! Our store offers a wide range of flavours and alternatives. Or, call in!</p>
                     <a href="#" class="services-button">Find us <i class="fa fa-angle-right"></i></a>
                 </div>
-                <div class="storefront-img" id="grid-item-2">
-                    <img src="images/storefront.jpg" alt="Photo of a bakery storefront">
+                <hr>
+                <div class="storefront-img" id="flex-item-2">
+                    <img src="images/storefront.jpg" alt="Photo of a bakery storefront" class="storefront">
                 </div>
             </div>
-
             <div class="services-flex-2">
-                <div class="catering-img" id="grid-item-3">
+                <div class="catering-img" id="flex-item-3">
                     <img src="images/catering.jpg" alt="Photo of dough being massaged">
                 </div>
 
-                <div id="grid-item-4">
-                    <h5 class="grid-heading">Catering</h5>
-                    <p>We offer catering to parties and events. Please call in advance and we will discuss the perfect plan for you!</p>
+                <div id="flex-item-4">
+                    <hr>
+                    <h5 class="flex-heading" id="catering">Catering</h5>
+                    <p class="flex-text">We offer catering to parties and events. Please call in advance and we will discuss the perfect plan for you!</p>
                     <a href="#" class="services-button">Details <i class="fa fa-angle-right"></i></a>
                 </div>
             </div>

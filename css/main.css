@@ -1,3 +1,5 @@
+/* Styles the site's main tags */
+
 h2 {
     font-family: 'Kanit', sans-serif;
     text-transform: uppercase;
@@ -33,6 +35,14 @@ p {
     font-size: 2em;
 }
 
+/* Sets logo size */
+
+.logo {
+    width: 30%;
+}
+
+/* Styles and centers the navbar */
+
 ul {
     display: flex;
     width: 100%;
@@ -41,26 +51,17 @@ ul {
     font-weight: 500;
 }
 
-.logo {
-    width: 30%;
-}
-
 .nav-item {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#home, #about, #contact {
-    display: inline-block;
-}
-
-.nav-item {
+    padding: 20px 50px 20px 50px;
     font-family: 'Kanit', sans-serif;
     text-decoration: none;
     color: #994395;
     text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Organizes the navbar horizontally */
+#home, #about, #contact {
     display: inline-block;
 }
 
@@ -73,11 +74,31 @@ ul {
     background-position: center;
 }
 
+/* Adds background image to about us page banner */
+.aboutbanner-background {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/aboutus-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Adds background image to contact us page banner */
+.contactbanner-background {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/contact-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Layers brand color over background image on homepage */
 .banner-layer {
     background: rgba(153,67,149,0.5);
     color: white;
 }
 
+/* Styles and spaces banner text */
 #banner-heading {
     padding: 5em 1em 1em 1em;
     text-shadow: darkmagenta 1px 0 10px;
@@ -88,7 +109,7 @@ ul {
     padding: 0em 1em 8em 1em;
 }
 
-/* Styles products section on homepage and creates flex layout*/
+/* Styles general products section on homepage*/
 .shop-section {
     border-radius: 50%;
     max-width: 100%;
@@ -102,12 +123,13 @@ ul {
     min-width: 100%;
 }
 
+/* Flexes product images */
 .product-images {
     display: flex;
     flex-direction: row;
     text-align: center;
     gap: 5em;
-    padding: 20px 20px 0px 20px;
+    padding: 70px 20px 0px 20px;
 }
 
 .cakes-product-img {
@@ -116,15 +138,16 @@ ul {
 }
 
 .sweets-product-img {
-    flex: 2;
+    flex: 1;
     flex-basis: auto;
 }
 
 .loaves-product-img {
-    flex: 3;
+    flex: 1;
     flex-basis: auto;
 }
 
+/* Flexes product headings */
 .section-heading {
     color: #994395;
 }
@@ -133,33 +156,23 @@ ul {
     display: flex;
     text-align: center;
     /* gap: 12em; */
-    padding-top: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 .cakes-product-heading {
-    /* grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1; */
     flex: 1;
 }
 
 .sweets-product-heading {
-    /* grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1; */
-    flex: 2;
+    flex: 1;
 }
 
 .loaves-product-heading {
-    /* grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1; */
-    flex: 3;
+    flex: 1;
 }
 
+/* flexes product buttons */
 .section-button {
     border: none;
     color: black;
@@ -167,98 +180,72 @@ ul {
     font-size: 1.5em;
     background-color: transparent;
     text-decoration: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
 
+/* Styles FontAwesome arrow icon */
+.product-arrow {
+    padding: 0em 0em 0em .5em;
+}
+
+/* Flexes product buttons on homepage*/
 .product-buttons {
     display: flex;
-    justify-content: center;
-    /* padding: 1em 0em 5em 0em;
-    gap: 18em; */
+    padding-bottom: 4em;
 }
 
 .cakes-product-button {
-    /* grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1; */
     flex: 1;
 }
 
 .sweets-product-button {
-    /* grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1; */
-    flex: 2;
+    flex: 1;
 }
 
 .loaves-product-button {
-    /* grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1; */
-    flex: 3;
+    flex: 1;
 }
 
-.services-flex-1 {
-    display: flex;
-}
-
-.services-flex-2 {
-    display: flex;
-}
-
+/* Flexes services section on homepage */
 .grid-container {
     display: flex;
-    flex-direction: row;
     max-width: 100%;
     min-width: 100%;
 }
 
-/* Creates grid layout for services section of homepage */
-#grid-item-1 {
-    /* grid-area: storefront;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    padding: 30px; */
-    flex: 1;
+/* Creates flex layout for services section of homepage
+
+
+/* Spaces heading in flex */
+.flex-heading {
+    padding: 2em, .5em, 0em, .5em;
+    display: flex;
 }
 
-#grid-item-2 {
-    /* grid-area: storefronttext;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1; */
-    flex: 2;
+#storefront {
+    padding: .5em 0em 0em .7em;
+    display: flex;
 }
 
-#grid-item-3 {
-    /* grid-area: catering;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2; */
-    flex: 3;
+#catering {
+    padding: .5em 0em 0em .5em;
+    display: flex;
 }
 
-#grid-item-4 {
-    /* grid-area: cateringtext;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    padding: 30px;
-    */
-    flex: 4;
+.flex-text {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    display: flex;
 }
 
-.grid-heading {
-    padding-bottom: .5em;
+#findus {
+    padding-bottom: 20em;
 }
 
+.grid-heading
+/* Spaces services images */
 .storefront-img {
     padding-top: 1em;
 }
@@ -267,34 +254,123 @@ ul {
     padding: 0em 0em 1em 1em;
 }
 
+#storefront, #catering {
+    padding: 0.75em 0em 0.6em 0.75em;
+}
+
+
+/* Styles services button  */
 .services-button {
     border: none;
     color: #994395;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5em;
     background-color: transparent;
-    padding-top: 20px;
     text-decoration: none;
-
+    padding-left: 1.25em;
 }
 
-.grid-container {
-    display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax (100px, 1fr));
-    grid-template-rows: auto auto;
-    grid-template-areas: storefront storefronttext;
-    max-width: 100%; */
+/* Styles About Us page */
+
+/* Spaces YouTube video from top */
+iframe {
+    padding-top: 3em;
 }
 
+/* Styles text on About page */
+#who {
+    color: #994395;
+    padding-top: 1.5em;
+}
+
+.whotext {
+    display: inline-block;
+    font-size: 25px;
+    width: 75%;
+    text-align: center;
+    padding-top: 1em;
+}
+
+/* Spaces FontAwesome cake */
+.fa-birthday-cake {
+    padding: 2em 0em 3em 0em;
+}
+
+/* Flexes mission and vision cards and adds background image*/
+.msflex {
+    display: flex;
+}
+
+.mission-background {
+    flex: 1;
+    width: 100%;
+    background-image: url('/images/mission.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.vision-background {
+    flex: 1;
+    width: 100%;
+    height: 400px;
+    background-image: url('/images/vision.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.about-layer {
+    background: rgba(255,255,255,0.8);
+    color: white;
+    height: 400px;
+    padding-top: 4em;
+}
+
+/* Styles About Us text */
 .about-h4 {
     color: #994395;
     font-size: 2em;
+}
+
+.ms-text {
+    display: inline-block;
+    color: black;
+    font-size: 25px;
+    width: 75%;
+    text-align: center;
+}
+
+/* Spaces FontAwesome heart */
+.fa-heart {
+    padding: 2em 0em 2em 0em;
+}
+
+/* Finetunes any changes to font and spacing */
+#employ {
+    color: #994395;
+}
+
+#ivythai {
+    padding-bottom: 3.5em;
+}
+
+#ivyphoto {
+    max-width: 100%;
+}
+.ivy-bio {
+    border: #994395 5px solid;
+    padding: 1em 1.5em 2em 1.5em;
+}
+
+.ivy-text {
+    font-size: 25px;
 }
 
 .about-wrapper {
     text-align: center;
 }
 
+/* Color and spaces contact form headings */
 #inputheading-name, #inputheading-email, #inputheading-message {
     color: rgb(49, 49, 49);
     font-family: 'Kanit', sans-serif;
@@ -312,6 +388,7 @@ form {
     background: rgba(153,67,149,0.6);
 }
 
+/* Adjusts size of input boxes */
 .nameinput, .emailinput, .messageinput {
     padding: 0em 4em 2em 4em;
 }
@@ -334,6 +411,16 @@ form {
     padding-bottom: 4em;
 }
 
+/* Styles submit button for contact form */
+#sendbutton {
+    font-size: 25px;
+    background-color: #994395;
+    color: white;
+    padding: 20px;
+    margin-left: 2.5em;
+}
+
+/* Flexes form for adjacent image */
 .contact-grid {
     display: flex;
 }

@@ -10,17 +10,17 @@
         <!-- Connects CSS stylesheet -->
         <link rel="stylesheet" href="../css/main.css">
       
-        <!-- Connects Lobster from Google Fonts -->
+        <!-- Connects Kanit from Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- Connects Kanit from Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500&display=swap" rel="stylesheet">
      
-        <!-- Connects FontAwesome 4.7.0 -->
+        <!-- Connects FontAwesome 4.7.0 Icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
+            <!-- Standard navbar for all pages -->
             <nav>
                 <div class="header-grid">
                     <div class="logo-container">
@@ -43,6 +43,14 @@
             </nav>
         </header>
         <main>
+            <!-- Main banner for Contact page -->
+            <div class="contactbanner-background">
+                <div class="banner-layer">
+                    <h3 id="banner-heading">Contact Us</h3>
+                    <h4 id="banner-text">Need more information? You can reach out to us here.</h4>
+                </div>
+            </div>
+            <!-- Oraganizes content for floating photo and inserts contact form -->
             <div class="contact-grid">
                 <form method="post" class="contact-form-container">
                     <fieldset>
@@ -67,8 +75,10 @@
                         <div class="messageinput">
                             <textarea id="message" class="inputbox"></textarea>
                         </div>
+                        <button id="sendbutton" type="submit">Send</button>
                     </fieldset>
                 </form>
+                <!-- Adds a brand photo, making the page slightly more exciting -->
                 <div class="contact-img-container">
                     <img src="../images/contact-img-400x600.jpg" alt="photo of bread at a bakery" id="contact-photo">
                 </div>

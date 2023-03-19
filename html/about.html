@@ -10,19 +10,18 @@
     <!-- Connects CSS stylesheet -->
     <link rel="stylesheet" href="../css/main.css">
   
-    <!-- Connects Lobster from Google Fonts -->
+    <!-- Connects Kanit from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <!-- Connects Kanit from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500&display=swap" rel="stylesheet">
  
-    <!-- Connects FontAwesome 4.7.0 -->
+    <!-- Connects FontAwesome 4.7.0 Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <nav>
+            <!-- Adds navbar idential to other pages but linked back out of html file-->
             <div class="header-grid">
                 <div class="logo-container">
                     <img src="../images/angieslogo.png" alt="logo of steaming purple bread" class="logo">
@@ -44,25 +43,47 @@
         </nav>
     </header>
     <main>
+        <!-- Main banner for About Us page -->
+        <div class="aboutbanner-background">
+            <div class="banner-layer">
+                <h3 id="banner-heading">About Us</h3>
+                <h4 id="banner-text">Get to know our business!</h4>
+            </div>
+        </div>
         <div class="about-wrapper">
             <div>
-                <h5>Who are we?</h5>
-                <p>We are a small team of bakers and enthusiasts who want to spread some love and joy through our sweet tooth.</p>
+                <!-- Embeds YouTube video -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pg_55jPfryg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h5 id="who">Who are we?</h5>
+                <p class="whotext">We are a small team of bakers and enthusiasts who want to spread some love and joy through our sweet tooth.<br><i class="fa fa-birthday-cake"></i></p>
             </div>
-            <div>
-                <h4 class="about-h4">Our Mission</h4>
+            <!-- Oragnizes content for flex layout -->
+            <div class="msflex">
+                <div class="mission-background">
+                    <div class="about-layer" id="mission">
+                        <h4 class="about-h4" >Our Mission</h4>
+                        <p class="ms-text">Through fair pricepoints and a huge variety, we want to be able to give everyone exactly what they are craving for.</p>
+                    </div>
+                </div>
+                <div class="vision-background">
+                    <div class="about-layer" id="vision">
+                        <h4 class="about-h4">Our Vision</h4>
+                        <p class="ms-text">We strive to be the most affordable and comforting food option and space for anyone who needs a little pick-me-up.</p>
+                    </div>
+                </div>
             </div>
+            <!-- Breaks up page with minimal text -->
             <div>
-                <h4 class="about-h4">Our Vision</h4>
+                <p class="whotext" id="employ"><i class="fa fa-heart"></i><br>We employ culinary students and those with a love for the craft and community.</p>
+                <p class="whotext" id="ivythai">However, we were founded and currently owned by Ivy Thai.<p>
             </div>
-            <div>
-                <p>We employ culinary students and those with a passion for this stuff.</p>
-                <p>However, this was all my idea.<p>
-            </div>
-            <div>
-                <img src="../images/ivy-thai-photo.jpg" alt="photo of Ivy Thai">
-                <h4 class="about-h4">Hi! My name is Ivy Thai.</h4>
-                <p>I started this business because baking was  a huge hobby of mine. I saw the potential in a shop like this and decided to take the chance. I regret nothing.<p>
+            <!-- Adds business owner photo and a short history -->
+            <div class="ivy-bio">
+                <img src="../images/ivy-thai-photo.jpg" alt="photo of Ivy Thai" id="ivyphoto">
+                <div>
+                    <h4 class="about-h4">Hi!</h4>
+                    <p class="ivy-text">I started this business because baking was a huge hobby of mine. I saw the potential in a shop like this and decided to take the chance. I regret nothing.<p>
+                </div>
             </div>
         </div>
     </main>
