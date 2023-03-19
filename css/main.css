@@ -251,6 +251,7 @@ ul {
     grid-template-areas:
     "storetext storeimage"
     "cateringimage cateringtext";
+    justify-content: center;
 }
 
 /* Creates flex layout for services section of homepage
