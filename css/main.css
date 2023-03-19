@@ -239,6 +239,14 @@ ul {
     padding-bottom: .5em;
 }
 
+.storefront-img {
+    padding-top: 1em;
+}
+
+.catering-img {
+    padding: 0em 0em 1em 1em;
+}
+
 .services-button {
     border: none;
     color: #994395;
@@ -246,6 +254,8 @@ ul {
     font-size: 1.5em;
     background-color: transparent;
     padding-top: 20px;
+    text-decoration: none;
+
 }
 
 .grid-container {
@@ -266,12 +276,54 @@ ul {
 }
 
 #inputheading-name, #inputheading-email, #inputheading-message {
-    color: #994395;
+    color: rgb(49, 49, 49);
     font-family: 'Kanit', sans-serif;
     font-size: 30px;
     padding: 0em 0em 1em 2em;
 }
 
+#inputheading-name {
+    padding-top: 2em;
+}
+
+form {
+    border-bottom: #994395 10px solid;
+    border-top: #994395 10px solid;
+    background: rgba(153,67,149,0.6);
+}
+
 .nameinput, .emailinput, .messageinput {
-    padding: 0em 0em 2em 4em;
+    padding: 0em 4em 2em 4em;
+}
+
+#fullname {
+    padding: .5em;
+    width: 30%;
+}
+
+#email {
+    padding: .5em;
+    width: 70%;
+}
+
+#message {
+    padding: 6em;
+    width: 80%;
+}
+.messageinput {
+    padding-bottom: 4em;
+}
+
+.contact-grid {
+    display: flex;
+}
+
+.contact-form-container {
+    flex: 1;
+}
+
+.contact-img-container {
+    display: flex;
+    border-bottom: #994395 10px solid;
+    border-top: #994395 10px solid;
 }
