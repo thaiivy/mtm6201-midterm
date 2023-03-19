@@ -229,7 +229,7 @@ ul {
 
 /* Spaces heading in flex */
 .flex-heading {
-    padding: 2em, .5em, 0em, .5em;
+    padding: 2em .5em 0em .5em;
     display: flex;
 }
 
