@@ -68,7 +68,7 @@ ul {
 .banner-background {
     width: 100%;
     height: 100%;
-    background-image: url('/images/sergio-arze-5msGxboneMA-unsplash.jpg');
+    background-image: url('/images/banner-background.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -109,7 +109,6 @@ ul {
 }
 
 .sections {
-    display: grid;
     border-bottom: black solid 1px;
     justify-content: center;
     max-width: 100%;
@@ -117,59 +116,57 @@ ul {
 }
 
 .product-images {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     text-align: center;
     gap: 5em;
     padding: 5em 8em 0em 8em;
 }
 
 .cakes-product-img {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    flex: 1;
+    flex-basis: auto;
 }
 
 .sweets-product-img {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    flex: 2;
+    flex-basis: auto;
 }
 
 .loaves-product-img {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    flex: 3;
+    flex-basis: auto;
 }
 
 .product-headings {
-    display: grid;
-    justify-content: center;
-    gap: 12em;
+    display: flex;
+    text-align: center;
+    /* gap: 12em; */
     padding-top: 1em;
 }
 
 .cakes-product-heading {
-    grid-column-start: 1;
+    /* grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 1; */
+    flex: 1;
 }
 
 .sweets-product-heading {
-    grid-column-start: 2;
+    /* grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 1; */
+    flex: 2;
 }
 
 .loaves-product-heading {
-    grid-column-start: 3;
+    /* grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 1; */
+    flex: 3;
 }
 
 .product-buttons {
@@ -201,7 +198,7 @@ ul {
 }
 
 /* Creates grid layout for services section of homepage */
-.grid-item-1 {
+#grid-item-1 {
     grid-area: storefront;
     grid-column-start: 1;
     grid-column-end: 1;
@@ -210,7 +207,7 @@ ul {
     padding: 30px;
 }
 
-.grid-item-2 {
+#grid-item-2 {
     grid-area: storefronttext;
     grid-column-start: 2;
     grid-column-end: 2;
@@ -218,7 +215,7 @@ ul {
     grid-row-end: 1;
 }
 
-.grid-item-3 {
+#grid-item-3 {
     grid-area: catering;
     grid-column-start: 1;
     grid-column-end: 1;
@@ -226,7 +223,7 @@ ul {
     grid-row-end: 2;
 }
 
-.grid-item-4 {
+#grid-item-4 {
     grid-area: cateringtext;
     grid-column-start: 2;
     grid-column-end: 2;
