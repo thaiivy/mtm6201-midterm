@@ -1,4 +1,6 @@
-
+.skipnav {
+    text-decoration: none;
+}
 /* Styles the site's main tags */
 h2 {
     font-family: 'Kanit', sans-serif;
@@ -258,8 +260,16 @@ ul {
     padding-top: 1em;
 }
 
+.storefrontphoto {
+    width: 100%;
+}
+
 .catering-img {
     padding: 0em 0em 1em 1em;
+}
+
+.cateringphoto {
+    width: 100%;
 }
 
 #storefront, #catering {
